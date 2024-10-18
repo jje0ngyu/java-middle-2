@@ -2,6 +2,13 @@ package generic.ex1;
 
 public class BoxMain2 {
 
+    /*
+        ObjectBox 를 사용할 경우, 재사용성이 높지만 타입 안정성이 떨어진다.
+        IntegerBox / StringBox 를 사용할 경우, 타입 안정성이 높아진다.
+
+        이 둘의 장점을 합한 것을 GenericBox 로 활용할 수 있다. -> BoxMain3
+     */
+
     public static void main(String[] args) {
         ObjectBox integerBox = new ObjectBox();
         integerBox.set(10);
